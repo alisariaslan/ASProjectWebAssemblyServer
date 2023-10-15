@@ -10,6 +10,7 @@ const path = require('path');
 
 app.use(compression());
 app.use('/parkor', express.static(path.join(__dirname, 'projects/parkor')));
+app.use('/cubescollide', express.static(path.join(__dirname, 'projects/cubescollide')));
 
 app.listen(listen_port,listen_ip, () => {
     console.log('Server started at -> http://%s:%s', listen_ip, listen_port);
